@@ -6,11 +6,11 @@
 
 # Declarations:
 
-![Untitled](images/Untitled.png)
+<img src="images/Untitled.png" width="50%" />
 
 Another way of declaring Array and Dictionaries:
 
-![Untitled](images/Untitled%201.png)
+<img src="images/Untitled%201.png" width="50%" />
 
 Further samples:
 
@@ -263,9 +263,9 @@ day = .friday
 
 ### Enum Sample
 
-![Untitled](images/Untitled%204.png)
+<img src="images/Untitled%204.png" width="60%" />
 
-![Untitled](images/Untitled%205.png)
+<img src="images/Untitled%205.png" width="60%" />
 
 ### RawValue
 
@@ -330,7 +330,7 @@ Structs are better suited to modeling simple objects that dont need inheritance 
 > **Struct is immutable**
 > 
 
-![Untitled](images/Untitled%2010.png)
+<img src="images/Untitled%2010.png" width="60%" />
 
 Computed Property
 
@@ -392,7 +392,7 @@ Four access modifiers:
 3. private(set) - open for read and restricted for write within the struct/class
 4. fileprivate - private with in the file
 
-![Untitled](images/Untitled%2011.png)
+<img src="images/Untitled%2011.png" width="60%" />
 
 ### Static
 
@@ -562,11 +562,11 @@ There are 4 types of access modifiers
 
 ## Computed Property - Get, Set
 
-![Untitled](images/Untitled%2014.png)
+<img src="images/Untitled%2014.png" width="60%" />
 
 ## Static Vs Class variables
 
-![Untitled](images/Untitled%2015.png)
+<img src="images/Untitled%2015.png" width="60%" />
 
 Static, Class are the type property flavours 
 
@@ -574,11 +574,11 @@ Static, Class are the type property flavours
 
 ## Subclassing
 
-![Untitled](images/Untitled%2016.png)
+<img src="images/Untitled%2016.png" width="60%" />
 
 **Subclassing Sample:**
 
-![Untitled](images/Untitled%2017.png)
+<img src="images/Untitled%2017.png" width="60%" />
 
 # Protocol
 
@@ -761,10 +761,10 @@ if let user = try? getUser(id: 23) {
 
 ## Throwing Errors
 
-![Untitled](images/Untitled%2022.png)
+<img src="images/Untitled%2022.png" width="60%" />
 
 ### Catching Errors
 
-![Untitled](images/Untitled%2023.png)
+<img src="images/Untitled%2023.png" width="60%" />
 
-![Untitled](images/Untitled%2024.png)
+<img src="images/Untitled%2024.png" width="60%" />
