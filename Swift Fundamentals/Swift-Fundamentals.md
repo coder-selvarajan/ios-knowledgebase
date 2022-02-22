@@ -9,11 +9,11 @@
 
 # Declarations:
 
-![Untitled](Swift%20Fund%2017f66/Untitled.png)
+![Untitled](images/Untitled.png)
 
 Another way of declaring Array and Dictionaries:
 
-![Untitled](Swift%20Fund%2017f66/Untitled%201.png)
+![Untitled](images/Untitled%201.png)
 
 Further samples:
 
@@ -115,7 +115,7 @@ mutableDictionary["key4"] = nil //removes the value for a key. same as above
 
 We saw Arrays, Sets, and Dictionaries. They are ordered, indexed but they are still strongly typed. You cannot store different types together. An array of type Int will only store Ints. This is where we can use Tuples. Tuples are small collections, where you can store different types of members together. They are used only when we must store simple data or if we have two return multiple values in a function.
 
-![Untitled](Swift%20Fund%2017f66/Untitled%202.png)
+![Untitled](images/Untitled%202.png)
 
 ```swift
 var infoTuple = ("Adam", "Scott", 43, 09892356) //Creating a tuple
@@ -247,7 +247,7 @@ greet("Raj")
 
 ### Overloading Function
 
-![Untitled](Swift%20Fund%2017f66/Untitled%203.png)
+![Untitled](images/Untitled%203.png)
 
 # Enum
 
@@ -266,17 +266,17 @@ day = .friday
 
 ### Enum Sample
 
-![Untitled](Swift%20Fund%2017f66/Untitled%204.png)
+![Untitled](images/Untitled%204.png)
 
-![Untitled](Swift%20Fund%2017f66/Untitled%205.png)
+![Untitled](images/Untitled%205.png)
 
 ### RawValue
 
-![Untitled](Swift%20Fund%2017f66/Untitled%206.png)
+![Untitled](images/Untitled%206.png)
 
 ### Associated Values
 
-![Untitled](Swift%20Fund%2017f66/Untitled%207.png)
+![Untitled](images/Untitled%207.png)
 
 # Closure
 
@@ -326,14 +326,14 @@ print(onlyT)
 
 Structs are better suited to modeling simple objects that dont need inheritance or reference capabilities. 
 
-![Untitled](Swift%20Fund%2017f66/Untitled%208.png)
+![Untitled](images/Untitled%208.png)
 
-![Untitled](Swift%20Fund%2017f66/Untitled%209.png)
+![Untitled](images/Untitled%209.png)
 
 > **Struct is immutable**
 > 
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2010.png)
+![Untitled](images/Untitled%2010.png)
 
 Computed Property
 
@@ -395,7 +395,7 @@ Four access modifiers:
 3. private(set) - open for read and restricted for write within the struct/class
 4. fileprivate - private with in the file
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2011.png)
+![Untitled](images/Untitled%2011.png)
 
 ### Static
 
@@ -441,11 +441,11 @@ novall.printSummary()
 
 ### Convenience Init
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2012.png)
+![Untitled](images/Untitled%2012.png)
 
 ## Class vs Struct
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2013.png)
+![Untitled](images/Untitled%2013.png)
 
 ### 1. Inheritance - override methods
 
@@ -565,11 +565,11 @@ There are 4 types of access modifiers
 
 ## Computed Property - Get, Set
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2014.png)
+![Untitled](images/Untitled%2014.png)
 
 ## Static Vs Class variables
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2015.png)
+![Untitled](images/Untitled%2015.png)
 
 Static, Class are the type property flavours 
 
@@ -577,11 +577,11 @@ Static, Class are the type property flavours
 
 ## Subclassing
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2016.png)
+![Untitled](images/Untitled%2016.png)
 
 **Subclassing Sample:**
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2017.png)
+![Untitled](images/Untitled%2017.png)
 
 # Protocol
 
@@ -625,17 +625,17 @@ commute(distance: 100, using: car) //prints 'I'm driving 100km'
 
 **Problem with inheritance:**
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2018.png)
+![Untitled](images/Untitled%2018.png)
 
 **Solution from protocol**:
 
 `CanFly` is a protocol here. 
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2019.png)
+![Untitled](images/Untitled%2019.png)
 
 ### Superclass + Protocol Order
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2020.png)
+![Untitled](images/Untitled%2020.png)
 
 # Extension
 
@@ -694,7 +694,7 @@ Optionals represent the absence of data. Any data type can be an optional
 
 There are 5 different ways on working with **Optionals** 
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2021.png)
+![Untitled](images/Untitled%2021.png)
 
 ### Unwrapping - If let
 
@@ -764,10 +764,10 @@ if let user = try? getUser(id: 23) {
 
 ## Throwing Errors
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2022.png)
+![Untitled](images/Untitled%2022.png)
 
 ### Catching Errors
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2023.png)
+![Untitled](images/Untitled%2023.png)
 
-![Untitled](Swift%20Fund%2017f66/Untitled%2024.png)
+![Untitled](images/Untitled%2024.png)
