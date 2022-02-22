@@ -392,7 +392,7 @@ Four access modifiers:
 3. private(set) - open for read and restricted for write within the struct/class
 4. fileprivate - private with in the file
 
-<img src="images/Untitled%2011.png" width="60%" />
+<img src="images/Untitled%2011.png" width="50%" />
 
 ### Static
 
@@ -562,11 +562,11 @@ There are 4 types of access modifiers
 
 ## Computed Property - Get, Set
 
-<img src="images/Untitled%2014.png" width="60%" />
+<img src="images/Untitled%2014.png" width="45%" />
 
 ## Static Vs Class variables
 
-<img src="images/Untitled%2015.png" width="60%" />
+<img src="images/Untitled%2015.png" width="45%" />
 
 Static, Class are the type property flavours 
 
@@ -761,10 +761,10 @@ if let user = try? getUser(id: 23) {
 
 ## Throwing Errors
 
-<img src="images/Untitled%2022.png" width="60%" />
+<img src="images/Untitled%2022.png" width="50%" />
 
 ### Catching Errors
 
-<img src="images/Untitled%2023.png" width="60%" />
+<img src="images/Untitled%2023.png" width="55%" />
 
-<img src="images/Untitled%2024.png" width="60%" />
+<img src="images/Untitled%2024.png" width="55%" />
