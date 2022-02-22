@@ -2,10 +2,7 @@
 
 <aside>
 💡 Lessons learnt from Paul Hudson's 1 hour Swift essentials course + from other courses
-
 </aside>
-
-**Table of Contents :**
 
 # Declarations:
 
