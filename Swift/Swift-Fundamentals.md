@@ -10,7 +10,7 @@
 
 Another way of declaring Array and Dictionaries:
 
-<img src="images/Untitled%201.png" width="50%" />
+<img src="images/Untitled1.png" width="50%" />
 
 Further samples:
 
@@ -112,7 +112,7 @@ mutableDictionary["key4"] = nil //removes the value for a key. same as above
 
 We saw Arrays, Sets, and Dictionaries. They are ordered, indexed but they are still strongly typed. You cannot store different types together. An array of type Int will only store Ints. This is where we can use Tuples. Tuples are small collections, where you can store different types of members together. They are used only when we must store simple data or if we have two return multiple values in a function.
 
-![Untitled](images/Untitled%202.png)
+![Untitled](images/Untitled2.png)
 
 ```swift
 var infoTuple = ("Adam", "Scott", 43, 09892356) //Creating a tuple
@@ -244,7 +244,7 @@ greet("Raj")
 
 ### Overloading Function
 
-![Untitled](images/Untitled%203.png)
+![Untitled](images/Untitled3.png)
 
 # Enum
 
@@ -263,17 +263,17 @@ day = .friday
 
 ### Enum Sample
 
-<img src="images/Untitled%204.png" width="60%" />
+<img src="images/Untitled4.png" width="60%" />
 
-<img src="images/Untitled%205.png" width="60%" />
+<img src="images/Untitled5.png" width="60%" />
 
 ### RawValue
 
-![Untitled](images/Untitled%206.png)
+![Untitled](images/Untitled6.png)
 
 ### Associated Values
 
-![Untitled](images/Untitled%207.png)
+![Untitled](images/Untitled7.png)
 
 # Closure
 
@@ -323,14 +323,14 @@ print(onlyT)
 
 Structs are better suited to modeling simple objects that dont need inheritance or reference capabilities. 
 
-![Untitled](images/Untitled%208.png)
+![Untitled](images/Untitled8.png)
 
-![Untitled](images/Untitled%209.png)
+![Untitled](images/Untitled9.png)
 
 > **Struct is immutable**
 > 
 
-<img src="images/Untitled%2010.png" width="60%" />
+<img src="images/Untitled10.png" width="60%" />
 
 Computed Property
 
@@ -392,7 +392,7 @@ Four access modifiers:
 3. private(set) - open for read and restricted for write within the struct/class
 4. fileprivate - private with in the file
 
-<img src="images/Untitled%2011.png" width="50%" />
+<img src="images/Untitled11.png" width="50%" />
 
 ### Static
 
@@ -438,11 +438,11 @@ novall.printSummary()
 
 ### Convenience Init
 
-![Untitled](images/Untitled%2012.png)
+![Untitled](images/Untitled12.png)
 
 ## Class vs Struct
 
-![Untitled](images/Untitled%2013.png)
+![Untitled](images/Untitled13.png)
 
 ### 1. Inheritance - override methods
 
@@ -562,11 +562,11 @@ There are 4 types of access modifiers
 
 ## Computed Property - Get, Set
 
-<img src="images/Untitled%2014.png" width="45%" />
+<img src="images/Untitled14.png" width="45%" />
 
 ## Static Vs Class variables
 
-<img src="images/Untitled%2015.png" width="45%" />
+<img src="images/Untitled15.png" width="45%" />
 
 Static, Class are the type property flavours 
 
@@ -574,11 +574,11 @@ Static, Class are the type property flavours
 
 ## Subclassing
 
-<img src="images/Untitled%2016.png" width="60%" />
+<img src="images/Untitled16.png" width="60%" />
 
 **Subclassing Sample:**
 
-<img src="images/Untitled%2017.png" width="60%" />
+<img src="images/Untitled17.png" width="60%" />
 
 # Protocol
 
@@ -622,17 +622,17 @@ commute(distance: 100, using: car) //prints 'I'm driving 100km'
 
 **Problem with inheritance:**
 
-![Untitled](images/Untitled%2018.png)
+![Untitled](images/Untitled18.png)
 
 **Solution from protocol**:
 
 `CanFly` is a protocol here. 
 
-![Untitled](images/Untitled%2019.png)
+![Untitled](images/Untitled19.png)
 
 ### Superclass + Protocol Order
 
-![Untitled](images/Untitled%2020.png)
+![Untitled](images/Untitled20.png)
 
 # Extension
 
@@ -691,7 +691,7 @@ Optionals represent the absence of data. Any data type can be an optional
 
 There are 5 different ways on working with **Optionals** 
 
-![Untitled](images/Untitled%2021.png)
+![Untitled](images/Untitled21.png)
 
 ### Unwrapping - If let
 
@@ -761,10 +761,10 @@ if let user = try? getUser(id: 23) {
 
 ## Throwing Errors
 
-<img src="images/Untitled%2022.png" width="50%" />
+<img src="images/Untitled22.png" width="50%" />
 
 ### Catching Errors
 
-<img src="images/Untitled%2023.png" width="55%" />
+<img src="images/Untitled23.png" width="55%" />
 
-<img src="images/Untitled%2024.png" width="55%" />
+<img src="images/Untitled24.png" width="55%" />

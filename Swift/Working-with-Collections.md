@@ -59,28 +59,28 @@ cities.sorted()
 
 ### Tuple
 
-![Untitled](images/wwc/Untitled%201.png)
+![Untitled](images/wwc/Untitled1.png)
 
 **Named Tuples**
 
-![Untitled](images/wwc/Untitled%202.png)
+![Untitled](images/wwc/Untitled2.png)
 
 # Control Flow
 
 ### **For Loop with collections**
 
-![Untitled](images/wwc/Untitled%203.png)
+![Untitled](images/wwc/Untitled3.png)
 
-![Untitled](images/wwc/Untitled%204.png)
+![Untitled](images/wwc/Untitled4.png)
 
 ### Switch
 
-![Untitled](images/wwc/Untitled%205.png)
+![Untitled](images/wwc/Untitled5.png)
 
 ### Guard
 
-![Untitled](images/wwc/Untitled%206.png)
+![Untitled](images/wwc/Untitled6.png)
 
 ### if let
 
-![Untitled](images/wwc/Untitled%207.png)
+![Untitled](images/wwc/Untitled7.png)

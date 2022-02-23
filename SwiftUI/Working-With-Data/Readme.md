@@ -30,7 +30,7 @@ Modifying a @State variable value does at least two things.
 
 ![Untitled](images/Untitled.png)
 
-![Untitled](images/Untitled%201.png)
+![Untitled](images/Untitled1.png)
 
 ### Two way binding
 
@@ -40,21 +40,21 @@ Two-way Binding ($name).The $ allows data to go back up to the property.
 
 Every time a letter is typed into the TextField, the new value is saved to the @State variable and the related view is redrawn.
 
-![Untitled](images/Untitled%202.png)
+![Untitled](images/Untitled2.png)
 
-![Untitled](images/Untitled%203.png)
+![Untitled](images/Untitled3.png)
 
-![Untitled](images/Untitled%204.png)
+![Untitled](images/Untitled4.png)
 
-![Untitled](images/Untitled%205.png)
+![Untitled](images/Untitled5.png)
 
-![Untitled](images/Untitled%206.png)
+![Untitled](images/Untitled6.png)
 
 **Group multiple single source for truth into a single struct object:** 
 
-![Untitled](images/Untitled%207.png)
+![Untitled](images/Untitled7.png)
 
-![Untitled](images/Untitled%208.png)
+![Untitled](images/Untitled8.png)
 
 <aside>
 💡 But if we use class instead of struct then the two way binding will not work.. 
@@ -62,9 +62,9 @@ For read-only data or one-way binding, you probably don’t need to use @State s
 
 </aside>
 
-![Untitled](images/Untitled%209.png)
+![Untitled](images/Untitled9.png)
 
-![Untitled](images/Untitled%2010.png)
+![Untitled](images/Untitled10.png)
 
 ## Binding
 
@@ -76,11 +76,11 @@ For read-only data or one-way binding, you probably don’t need to use @State s
 
 ### Binding with list
 
-![Untitled](images/Untitled%2011.png)
+![Untitled](images/Untitled11.png)
 
 ## Observable Object
 
-![Untitled](images/Untitled%2012.png)
+![Untitled](images/Untitled12.png)
 
 <aside>
 💡 `@StateObject` is used to persist clases only.
@@ -95,8 +95,8 @@ With `@Published`, your ObservableObject can push data changes to the UI.Now you
 
 ..
 
-![Untitled](images/Untitled%2013.png)
+![Untitled](images/Untitled13.png)
 
-![Untitled](images/Untitled%2014.png)
+![Untitled](images/Untitled14.png)
 
 ## @StateObject
