@@ -1,7 +1,5 @@
 # Core Data
 
-### Notes from Udemy Course
-
 Core Data is a persistance framework, which can persist an object graph to a storage medium.
 
 - It provides four store tips :
