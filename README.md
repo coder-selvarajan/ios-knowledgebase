@@ -7,4 +7,7 @@ iOS development related articles, notes and projects
 - [Working with Collections](/Swift/Working-with-Collections.md)
 
 ## SwiftUI
-- [Working with Data](/SwiftUI/Working-With-Data/Readme.md)
+- [Working with Data](/SwiftUI/WorkingWithData/Readme.md)
+
+## Basics
+- [Core Data](/Basics/CoreData.md)
