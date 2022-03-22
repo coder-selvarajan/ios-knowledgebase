@@ -9,6 +9,7 @@ iOS development related articles, notes and projects
 - [Closures](/Swift/Closures.md)
 - [Working with Collections](/Swift/Working-with-Collections.md)
 - [Design Patterns](/Swift/DesignPatterns.md)
+- [Mirror API](/Swift/MirrorAPI.md)
 
 ## SwiftUI
 
