@@ -28,6 +28,8 @@ The bounds of an UIView is the rectangle, expressed as a location (x,y) and size
 
 The use of category in Objective-C is to extend an existing class by appending behavior that is useful only in certain situations. To add such extension to existing classes, objective –C provides extensions and categories. The syntax used to define a category is @interface keyword.
 
+---
+
 ### which class are used to establish a connection between applications to the web server?
 
 - NSURL
@@ -58,6 +60,8 @@ A delegate allows one object to send messages to another object when an event ha
 
 A delegate is just an object that another object sends messages to when certain things happen, so that the delegate can handle app-specific details the original object wasn't designed for. It's a way of customizing behavior without sub classing.
 
+---
+
 ### What is service extension?
 
 The service extension allows to change the content in a notification before it is presented.
@@ -80,6 +84,8 @@ Assign creates a reference from one object to another without increasing the re
 
 “atomic”, the synthesized setter/getter will ensure that a whole value is always returned from the getter or set by the setter, only single thread can access variable to get or set value at a time.
 
+---
+
 ### Explain what are Responder Chain and First Responder?
 
 A ResponderChain is a hierarchy of objects that can respond to events received. The first object in the ResponderChain is called the FirstResponder.
@@ -95,3 +101,38 @@ AVFoundation allows us to work on a detailed level with time-based audio-visual 
 ### What is the difference between Synchronous & Asynchronous task ?
 
 Synchronous: waits until the task has completed Asynchronous: completes a task in background and can notify you when complete
+
+### What is generics in Swift ?
+
+Generics create code that does not get specific about underlying data types.
+
+---
+
+### Explain method swizzling ?
+
+Method swizzling is a well-known practice in Objective-C and in other languages that support dynamic method dispatching. Through swizzling, the implementation of a method can be replaced with a different one at runtime, by changing the mapping
+
+between a specific #selector(method) and the function that contains its implementation.
+
+To use method swizzling with your Swift classes there are two requirements that you must comply with:-
+
+- The class containing the methods to be swizzled must extend NSObject.
+- The methods you want to swizzle must have the dynamic attribute.
+
+### What is Hashable ?
+
+Hashable allows us to use our objects as keys in a dictionary. So, we can make our custom types.
+
+### Define App Bundle?
+
+When you build your iOS app, Xcode packages it as a bundle. A bundle is a directory in the file system that groups related resources together in one place. An iOS app bundle contains the app executable file and supporting resource files such as app icons, image files, and localized content.
+
+### What is Dynamic Dispatch ?
+
+Dynamic Dispatch is the process of selecting which implementation of a polymorphic operation that’s a method or a function to call at run time.
+
+### What is ARC ?
+
+It stands for Automatic Reference Counting. ARC is a compiler feature that provides automatic memory management for Objective C Objects, so that developers can focus primarily on building application functionality and not worry about retain and releases.
+
+---
