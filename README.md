@@ -20,7 +20,7 @@ iOS development related articles, notes and projects
 
 ## UIKit
 
-- [UIKit Basics](/iOSDev/UIKit.md)
+- [UIKit Basics](/iOSdev/UIKit.md)
 
 ## Basics
 
