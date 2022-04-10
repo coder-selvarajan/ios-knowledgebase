@@ -10,26 +10,24 @@
 
 </details>
 
-<details><summary><b>How to define baseclass?</b></summary>
-
+<details><summary><b>How to define baseclass?</b></summary><br/>
 A class which does not have a superclass is called the base-class.
-
 </details>
 
-<details><summary><b>Internal access</b></summary>
+<details><summary><b>Internal access</b></summary><br/>
 
 Internal access enables entities to be used within any source file from their defining module, but not in any source file outside of the module. Internal access is the default level of access.
 
 </details>
 
-<details><summary><b>Which class to use parsing?</b></summary>
+<details><summary><b>Which class to use parsing?</b></summary><br/>
 
 `NSXML` class can be used to parse xml document.
 
 </details>
 
 <details><summary><b>Difference between frame and bounds?
-</b></summary>
+</b></summary><br/>
 
 The bounds of an UIView is the rectangle, expressed as a location (x,y) and size (width, height) relative to its own coordinate system (0,0). The frame of an UIView is the rectangle, expressed as a location (x,y) and size (width, height) relative to the superview it is contained within.
 
@@ -37,7 +35,7 @@ The bounds of an UIView is the rectangle, expressed as a location (x,y) and size
 
 <details><summary><b>
 Explain what is the use of category in Objective-C?
-</b></summary>
+</b></summary><br/>
 
 The use of category in Objective-C is to extend an existing class by appending behavior that is useful only in certain situations. To add such extension to existing classes, objective –C provides extensions and categories. The syntax used to define a category is @interface keyword.
 
@@ -45,7 +43,7 @@ The use of category in Objective-C is to extend an existing class by appending b
 
 ---
 
-<details><summary><b>which class are used to establish a connection between applications to the web server?</b></summary>
+<details><summary><b>which class are used to establish a connection between applications to the web server?</b></summary><br/>
 
 - NSURL
 - NSURLRequest
