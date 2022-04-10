@@ -1,6 +1,7 @@
 # Swift Coding Challenges
 
-## Find character occurance in a string - Use of 'for loop' VS 'reduce' VS 'NSCountedSet'
+<details><summary><b>How to define baseclass?
+Find character occurance in a string - Use of 'for loop' VS 'reduce' VS 'NSCountedSet'</b></summary><br/>
 
 ```swift
 //for loop solution
@@ -57,7 +58,9 @@ func challenge5c(input: String, count: String) -> Int {
 // This is wasteful, for sure, and inefficient too – a massive ten times slower than the original.
 ```
 
-## Does one string contain another?
+</details>
+
+<details><summary><b>Does one string contain another?</b></summary><br/>
 
 Write your own version of the contains() method on String that ignores letter case, and without using the existing contains() method.
 
@@ -77,7 +80,9 @@ extension String {
 }
 ```
 
-## Remove duplicate characters in a string
+</details>
+
+<details><summary><b>Remove duplicate characters in a string</b></summary><br/>
 
 ```swift
 //solution 1 - NSOrderedSet
@@ -112,7 +117,9 @@ func challenge6c(string: String) -> String {
 }
 ```
 
-## Write a function that returns a string with any consecutive spaces replaced with a single space.
+</details>
+
+<details><summary><b>Write a function that returns a string with any consecutive spaces replaced with a single space.</b></summary><br/>
 
 Note: The spaces in the front and back also to be converted as single space.
 
@@ -132,7 +139,9 @@ func challenge7b(input: String) -> String {
 // Running regular expressions isn’t cheap, so this code runs about 50% the speed of the manual solution-2
 ```
 
-## String is rotated?
+</details>
+
+<details><summary><b>String is rotated?</b></summary><br/>
 
 Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 
@@ -144,7 +153,9 @@ func challenge8(input: String, rotated: String) -> Bool {
 }
 ```
 
-## Find pangrams
+</details>
+
+<details><summary><b>Find pangrams</b></summary><br/>
 
 Write a function that returns true if it is given a string that is an English pangram, ignoring letter case.
 Tip: A pangram is a string that contains every letter of the alphabet at least once.
@@ -157,7 +168,9 @@ func challenge9(input: String) -> Bool {
 }
 ```
 
-## Find Vowels and consonants
+</details>
+
+<details><summary><b>Find Vowels and consonants</b></summary><br/>
 
 Given a string in English, return a tuple containing the number of vowels and consonants.
 
@@ -180,7 +193,9 @@ func getVowelsConsonants(input:String) -> (vowels: Int, consonants: Int) {
 }
 ```
 
-## Three different letters
+</details>
+
+<details><summary><b>Three different letters</b></summary><br/>
 
 Write a function that accepts two strings, and returns true if they are identical in length but have no more than three different letters, taking case and string order into account.
 
@@ -206,7 +221,9 @@ func challenge11(first: String, second: String) -> Bool {
 }
 ```
 
-## Find longest prefix
+</details>
+
+<details><summary><b>Find longest prefix</b></summary><br/>
 
 Write a function that accepts a string of words with a similar prefix, separated by spaces, and returns the longest substring that prefixes all words.
 
@@ -238,7 +255,9 @@ func challenge12(input: String) -> String {
 // The string “flip flap flop” should return “fl”.
 ```
 
-## Run-length encoding
+</details>
+
+<details><summary><b>Run-length encoding</b></summary><br/>
 
 Write a function that accepts a string as input, then returns how often each letter is repeated in a single run, taking case into account.
 **Sample input and output**
@@ -264,7 +283,9 @@ func challenge13b(input: String) -> String {
 }
 ```
 
-## String permutations
+</details>
+
+<details><summary><b>String permutations</b></summary><br/>
 
 Write a function that prints all possible permutations of a given input string.
 Tip: A string permutation is any given rearrangement of its letters, for example “boamtw” is a permutation of “wombat”.
@@ -300,7 +321,9 @@ func challenge14(string: String, current: String = "") {
 }
 ```
 
-## Reverse the words in a string
+</details>
+
+<details><summary><b>Reverse the words in a string</b></summary><br/>
 
 Write a function that returns a string with each of its words reversed but in the original order, without using a loop.
 **_Sample input and output_**
@@ -315,7 +338,9 @@ func challenge15(input: String) -> String {
 }
 ```
 
-## Fizz Buzz
+</details>
+
+<details><summary><b>Fizz Buzz</b></summary><br/>
 
 Write a function that counts from 1 through 100, and prints “Fizz” if the counter is evenly divisible by 3, “Buzz” if it’s evenly divisible by 5, “Fizz Buzz” if it’s even divisible by three and five, or the counter number for all other cases.
 **Sample input and output**
@@ -333,7 +358,9 @@ func challenge16c() {
 }
 ```
 
-## Generate a random number in a range
+</details>
+
+<details><summary><b>Generate a random number in a range</b></summary><br/>
 
 Write a function that accepts positive minimum and maximum integers, and returns a random number between those two bounds, inclusive.
 **Sample input and output**
@@ -352,7 +379,9 @@ func challenge17b(min: Int, max: Int) -> Int {
 }
 ```
 
-## Number is Prime
+</details>
+
+<details><summary><b>Number is Prime</b></summary><br/>
 
 Write a function that accepts an integer as its parameter and returns true if the number is prime.
 Tip: A number is considered prime if it is greater than one and has no positive divisors other than 1 and itself.
@@ -379,7 +408,9 @@ func challenge20b(number: Int) -> Bool {
 }
 ```
 
-## Backwards Read Prime
+</details>
+
+<details><summary><b>Backwards Read Prime</b></summary><br/>
 
 ```swift
 func backwardsPrime(_ start: Int, _ stop: Int) -> [Int] {
@@ -400,3 +431,5 @@ func revNb(_ n: Int) -> Int {
     return Int(String(String(n).characters.reversed()))!
 }
 ```
+
+</details>
