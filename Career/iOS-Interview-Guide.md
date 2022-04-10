@@ -12,7 +12,7 @@ If you think about it long enough, your typical iOS application is just a giant 
 
 Following is Apple’s diagram of the iOS app life cycle:
 
-![Run Loop](images-iv-guide/run-loop.png)
+<img src="images-iv-guide/run-loop.png" width="40%">
 
 **UIApplication** is just an object built around the **main()** loop to augment it and give us more usability that calls convenient callbacks to your **UIAppDelegate** subclass. Those “convenient” callback methods would be:
 
