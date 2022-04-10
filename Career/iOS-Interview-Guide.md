@@ -84,3 +84,13 @@ The main responsibility of this layer is to store data for your application and 
 Overview:
 
 ![Layers Overview](images-iv-guide/layer-overview.png)
+
+### Flowchart sample
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
