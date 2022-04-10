@@ -10,10 +10,17 @@ iOS development related articles, notes and projects
 - [Working with Collections](/Swift/Working-with-Collections.md)
 - [Design Patterns](/Swift/DesignPatterns.md)
 - [Mirror API](/Swift/MirrorAPI.md)
+- [Cheatsheet](/Swift/Cheatsheet.md)
+- [Type Casting](/Swift/TypeCasting.md)
+- [Coding Challenges](/Swift/CodingChallenges.md)
 
 ## SwiftUI
 
 - [Working with Data](/SwiftUI/WorkingWithData/Readme.md)
+
+## UIKit
+
+- [UIKit Basics](/iOSDev/UIKit.md)
 
 ## Basics
 
@@ -23,4 +30,10 @@ iOS development related articles, notes and projects
 ## iOS Development
 
 - [Code Signing](/iOSdev/CodeSigning.md)
+- [Provisioning Profile](/iOSdev/ProvisioningProfile.md)
+- [Design Principles](/iOSdev/DesignPrinciples.md)
 - [Interview - FAQ](/iOSdev/Interview-faq.md)
+
+## Advanced
+
+- [Combine](/Advanced/CombineBasics.md)
