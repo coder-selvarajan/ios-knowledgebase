@@ -29,6 +29,7 @@ iOS development related articles, notes and projects
 
 ## iOS Development
 
+- [Command Line Basics](/iOSdev/CommandLineBasics.md)
 - [Code Signing](/iOSdev/CodeSigning.md)
 - [Provisioning Profile](/iOSdev/ProvisioningProfile.md)
 - [Design Principles](/iOSdev/DesignPrinciples.md)
