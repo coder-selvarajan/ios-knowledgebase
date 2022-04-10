@@ -2,30 +2,44 @@
 
 This page contains a collection of recipes for SwiftUI views and layouts.
 
-## Clip shape and smooth corners
+<details><summary><b>Clip shape and smooth corners</b></summary>
+<p>
+<img src="images/clip-shape.png" />
+</p>
+</details>
 
-![Untitled](images/clip-shape.png)
+<details><summary><b>Card style with VStack</b></summary>
+<p>
+<img src="images/card-style.png" />
+</p>
+</details>
 
-## Card style with VStack
+<details><summary><b>Corner alignment with double frame</b></summary>
+<p>
+<img src="images/corner-alignment.png" />
+</p>
+</details>
 
-![Untitled](images/card-style.png)
+<details><summary><b>Gradient background</b></summary>
+<p>
+<img src="images/gradient-bg.png" />
+</p>
+</details>
 
-## Corner alignment with double frame
+<details><summary><b>Mask & Transparent</b></summary>
+<p>
+<img src="images/mask.png" />
+</p>
+</details>
 
-![Untitled](images/corner-alignment.png)
+<details><summary><b>Default WithAnimation</b></summary>
+<p>
+<img src="images/with-animation.png" />
+</p>
+</details>
 
-## Gradient background
-
-![Untitled](images/gradient-bg.png)
-
-## Mask & Transparent
-
-![Untitled](images/mask.png)
-
-## Default WithAnimation
-
-![Untitled](images/with-animation.png)
-
-## Transition & Animation
-
-![Untitled](images/transition-animation.png)
+<details><summary><b>Transition & Animation</b></summary>
+<p>
+<img src="images/transition-animation.png" />
+</p>
+</details>
