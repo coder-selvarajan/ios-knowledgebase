@@ -77,7 +77,7 @@ The main responsibility of this layer is to store data for your application and 
 
 ### Service Layer
 
-This layer is responsible for all things involving networking and external com- munication. That could be, an HTTP client and a set of accompanying objects that do networking for the app and connect with the backend JSON API. Or it could be a Bluetooth Low Energy (BLE) client wrapper code that helps your app communicate and send or receive data from external Bluetooth devices. Or it could be a socket connection code. Or it could be a location service that connects with a device’s GPS delegates and gets location change updates.
+This layer is responsible for all things involving networking and external communication. That could be, an HTTP client and a set of accompanying objects that do networking for the app and connect with the backend JSON API. Or it could be a Bluetooth Low Energy (BLE) client wrapper code that helps your app communicate and send or receive data from external Bluetooth devices. Or it could be a socket connection code. Or it could be a location service that connects with a device’s GPS delegates and gets location change updates.
 
 The bottom line is that it’s the code that knows how to work with external interfaces, whether it’s HTTP or BLE or something else. Also quite often data serialization and mapping (let’s say from JSON to your custom objects) are included in this layer as well.
 
@@ -85,7 +85,7 @@ The bottom line is that it’s the code that knows how to work with external int
 
 The UI layer is responsible for drawing things on the screen. This is all the stuff that naturally goes into that bucket like UIView subclasses, Autolayout, Table Views, Buttons, Collection Views, and Bar Buttons.
 
-Two other things that also belong to this layer that might not be obvious are View Controllers and View Models. View Controllers are suppose to do justthat,controltheview.View Modelsarecomplimentaryobjectsthathelp with decluttering and decoupling views from other layers of responsibility. Re- member the key to a happy and healthy iOS codebase is a skinny controller.
+Two other things that also belong to this layer that might not be obvious are View Controllers and View Models. View Controllers are suppose to do just that, control the view. View Models are complimentary objects that help with decluttering and decoupling views from other layers of responsibility. Remember the key to a happy and healthy iOS codebase is a skinny controller.
 
 ### Business Logic Layer
 
