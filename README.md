@@ -39,4 +39,4 @@ iOS development related articles, notes and projects
 ## Career
 
 - [Interview - FAQ](/Career/Interview-faq.md)
-- [iOS Interview Guide](/Career/iOS-Interview-Guide.md)
+- [iOS Interview Guide](/Career/iOS-Interview-Guide/Index.md)
