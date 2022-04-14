@@ -23,6 +23,48 @@ var typeInferredSet : Set = [1, 3, 2]
 let emptyDictionary = [Int : String]()
 ```
 
+### Data Types
+
+```swift
+// Swift is a strongly-typed language, which means that it is very important what type an object is!
+// There are several Swift data types, the more common are listed here.
+
+let boolean: Bool = true
+let integer: Int = 42
+let pi: Double = 3.14
+let string: String = "Strings in Swift can be written with double quotes."
+
+// Swift defaults to using Double when given a floating-point number,
+// and unless you have a good reason not to, you should as well.
+
+let float: Float = 3.14159
+let double = 3.14159 // Double type is inferred
+
+// Collection types in Swift must be explicit about the type of their contents.
+
+let arrayOfStrings = [String]()
+
+// Arrays and Dictionaries should be declared using shorthand syntax.
+
+let arrayOfInts: [Int] = [1, 2, 3]
+let dictionaryOfStringDoublePairs: [String : Double] = ["Pi" : 3.1415, "Euler" : 2.71828, "Pythagoras" : 1.41421]
+
+// The compiler can infer the types of the array and dictionary above, we can shorten them as follows.
+
+let arrayOfInts = [1, 2, 3]
+let dictionaryOfStringDoublePairs = ["Pi" : 3.1415, "Euler" : 2.71828, "Pythagoras" : 1.41421]
+
+// Sets, however, must be declared using full syntax.
+
+let setOfBools: Set<Bool> = [true, false]
+
+// or...
+let setOfInts = Set<Int>()
+
+// All of the properties listed above must contain a value, they cannot be nil.
+// To express a nil value in Swift, we need to use optional properties.
+```
+
 ### Useful Functions:
 
 ```swift
@@ -73,13 +115,13 @@ let animalsSet : Set = ["tiger", "cat", "lion", "dog", "cat", "cow", "hamster"]
 let petSet : Set = ["dog", "hamster", "cat", "cow"]
 let birdSet : Set = ["crow", "sparrow", "cuckoo"]
 let commonSet = animalsSet.intersection(petSet) //finds the common members of the two sets
-//Result {“cat”, “hamster”, “dog”, “cow”} 
+//Result {“cat”, “hamster”, “dog”, “cow”}
 
 let uncommonSet = animalsSet.symmetricDifference(petSet) //the opposite of intersection
-//Result {“tiger”, “lion”} 
+//Result {“tiger”, “lion”}
 
 let mixedSet = petSet.union(birdSet) //adds two sets
-//Result {“dog”, “sparrow”, “cat”, “crow”, “cow”, “cuckoo”, “hamster”} 
+//Result {“dog”, “sparrow”, “cat”, “crow”, “cow”, “cuckoo”, “hamster”}
 
 petSet.isSubset(of: animalsSet) //returns true if second set has all the values of the first set. here true
 petSet.isDisjoint(with: birdSet) //to determine if two sets are completely different
@@ -182,7 +224,7 @@ func roleDice() -> Int {
 }
 print(rollDice())
 
-// single return line can be modified like this.. 
+// single return line can be modified like this..
 func roleDice() -> Int {
 	Int.random(in: 1...12)
 }
@@ -277,7 +319,7 @@ day = .friday
 
 # Closure
 
-Closures are basically anonymous functions. A function without a name. A self contained package of functionality that can be passed around. 
+Closures are basically anonymous functions. A function without a name. A self contained package of functionality that can be passed around.
 
 ```swift
 // sample 1
@@ -298,22 +340,22 @@ sayHello("Raj") //results - Hi, Raj!
 ```swift
 // shorthands demo
 let team = ["Gloria", "Suzanna", "Tiffany", "Tasha"]
-let onlyT = team.filter({ (name:String) -> Bool in 
+let onlyT = team.filter({ (name:String) -> Bool in
 	return name.hasPrefix("T")
 })
 //OR shorthand 1
-let onlyT1 = team.filter({ (name:String) in 
+let onlyT1 = team.filter({ (name:String) in
 	return name.hasPrefix("T")
 })
 //OR shorthand 2
-let onlyT2 = team.filter({ name in 
+let onlyT2 = team.filter({ name in
 	return name.hasPrefix("T")
 })
 //OR shorthand 3
-let onlyT3 = team.filter({ name in 
+let onlyT3 = team.filter({ name in
 	name.hasPrefix("T")
 })
-//OR shorthand 4 
+//OR shorthand 4
 let onlyT4 = team.filter { $0.hasPrefix("T") }
 //call the func now
 print(onlyT)
@@ -321,14 +363,13 @@ print(onlyT)
 
 # Struct
 
-Structs are better suited to modeling simple objects that dont need inheritance or reference capabilities. 
+Structs are better suited to modeling simple objects that dont need inheritance or reference capabilities.
 
 ![Untitled](images/Untitled8.png)
 
 ![Untitled](images/Untitled9.png)
 
 > **Struct is immutable**
-> 
 
 <img src="images/Untitled10.png" width="60%" />
 
@@ -337,9 +378,9 @@ Computed Property
 ```swift
 //computed property
 struct Employee {
-	let name: String 
+	let name: String
 	var vacationAllowed = 14
-	var vacationTaken = 0 
+	var vacationTaken = 0
 
 	var vacationRemaining: Int {
 		get {
@@ -415,11 +456,11 @@ import Cocoa
 
 class Employee {
     let hours: Int
-    
+
     init(hours: Int){
         self.hours = hours
     }
-    
+
     func printSummary() {
         print("I work \(hours) hours a day.")
     }
@@ -447,13 +488,13 @@ novall.printSummary()
 ### 1. Inheritance - override methods
 
 ```swift
-// in continuation to above example.. 
+// in continuation to above example..
 //first diff - inheritance
 class Developer: Employee {
     func work() {
         print("I'm coding for \(hours) hours a day.")
     }
-		
+
 		override func printSummary() {
         print("I spent \(hours) hours a day fighting over tabs vs spaces.")
     }
@@ -465,7 +506,7 @@ class Developer: Employee {
 ```swift
 class Vehicle {
     let isElectric: Bool
-    
+
     init(isElectric: Bool) {
         self.isElectric = isElectric
     }
@@ -495,7 +536,7 @@ actor2.name = "Tom Cruise"
 print(actor1.name) //prints 'Tom Cruise'
 print(actor2.name) //prints 'Tom Cruise'
 
-//if we convert Actor class as Struct then the results will be different. 
+//if we convert Actor class as Struct then the results will be different.
 ...
 print(actor1.name) //prints 'Nicolas Cage'
 print(actor2.name) //prints 'Tom Cruise'
@@ -511,7 +552,7 @@ class Site {
         self.id = id
         print("Site \(id): I've been created")
     }
-    
+
     deinit {
         print("Site \(id): I've been destroyed!")
     }
@@ -543,7 +584,7 @@ print(singer.name) //prints 'Justin'
 💡 **The Right Choice
 
 Struct** - simple, encapsulated object needs + copied
-**Classes** - anything needing to be passed by reference + uses inheritance
+**Classes\*\* - anything needing to be passed by reference + uses inheritance
 
 </aside>
 
@@ -568,7 +609,7 @@ There are 4 types of access modifiers
 
 <img src="images/Untitled15.png" width="45%" />
 
-Static, Class are the type property flavours 
+Static, Class are the type property flavours
 
 **Static Types** can not be overritten in a sub class. but **class** variable can be overridden in a sub class.. and class variables can only be computed properties
 
@@ -582,7 +623,7 @@ Static, Class are the type property flavours
 
 # Protocol
 
-Its a way to enforce minimum functionality implementations. Classess and Structs using the protocol should conform to the specific methods in the protocol. 
+Its a way to enforce minimum functionality implementations. Classess and Structs using the protocol should conform to the specific methods in the protocol.
 
 ```swift
 protocol Vehicle {
@@ -626,7 +667,7 @@ commute(distance: 100, using: car) //prints 'I'm driving 100km'
 
 **Solution from protocol**:
 
-`CanFly` is a protocol here. 
+`CanFly` is a protocol here.
 
 ![Untitled](images/Untitled19.png)
 
@@ -643,12 +684,12 @@ extension String {
     func trimmed() -> String {
         self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
-    
+
     //alternative approach
     mutating func trim() {
         self = self.trimmed()
     }
-    
+
     //computed property
     var lines: [String] {
         self.components(separatedBy: .newlines)
@@ -689,7 +730,7 @@ if guests.isNotEmpty {
 
 Optionals represent the absence of data. Any data type can be an optional
 
-There are 5 different ways on working with **Optionals** 
+There are 5 different ways on working with **Optionals**
 
 ![Untitled](images/Untitled21.png)
 
@@ -710,7 +751,7 @@ if let marioOpposite = opposites["Mario"] {
 
 ### Unwrapping - Guard
 
-Guard can also be used for optional unwrapping. It is the opposite of 'if let'. However it works with any condition. 
+Guard can also be used for optional unwrapping. It is the opposite of 'if let'. However it works with any condition.
 
 ```swift
 func printSquare(of number: Int?) {
@@ -718,7 +759,7 @@ func printSquare(of number: Int?) {
         print("Missing input")
         return  // this is mandatary
     }
-    
+
     print("\(number) * \(number) is \(number * number)")
 }
 ```
