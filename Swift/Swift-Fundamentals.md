@@ -80,6 +80,43 @@ var isSaved = false
 isSaved.toggle()
 ```
 
+### Optionals Intro
+
+```swift
+// We create an optional property by adding a ? to a Swift type.
+
+var optionalInt: Int? = 42
+var optionalString: String? = "Is this a string?"
+var optionalArrayOfInts: [Int]? = [1, 2, 3]
+var optionalArrayOfOptionalInts: [Int?]? = [1, 2, 3]
+
+// We must unwrap an optional before we can use it. We can do this in a couple of ways.
+// Optional binding - the safest way.
+
+if let optionalInt = optionalInt { // Swift convention is to reuse the property name.
+    print(optionalInt)
+}
+
+// Forced unwrapping - use only when we know the value won't be nil.
+
+let optionalIntAsDouble = Double(optionalInt!)
+
+// Implicit unwrapping - if we are sure a value will exist at runtime we can declare an
+// implicitly unwrapped optional property.
+
+var definitelyExists: String! = "The Universe"
+
+definitelyExists = nil //Legal code, but variable now dangerous!
+
+let shoutyString = definitelyExists.uppercased() //Crash at runtime!
+
+// using a guard statement in a function
+guard let results = data["results"] else {
+    // results key does not exist in data dictionary
+    return // must be in a function to use return
+}
+```
+
 # Collections
 
 ### Array

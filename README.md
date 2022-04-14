@@ -13,6 +13,7 @@ iOS development related articles, notes and projects
 - [Cheatsheet](/Swift/Cheatsheet.md)
 - [Type Casting](/Swift/TypeCasting.md)
 - [Coding Challenges](/Swift/CodingChallenges.md)
+- [Data Structures and Algorithms](/Swift/DSA.md)
 
 ## SwiftUI
 
