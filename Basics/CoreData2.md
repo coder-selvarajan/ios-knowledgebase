@@ -84,3 +84,97 @@ struct ContentView: View {
     ...
 }
 ```
+
+```swift
+import SwiftUI
+import CoreData
+struct ContentView: View {
+    @Environment(\. managedObjectContext) private var viewContext
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<Item>
+    @FetchRequest(sortDescriptors: []) var people: FetchedResults<Person> I
+    var body: some View {
+        VStack {
+            Button(action: addItem) {
+                Label("Add Item", systemImage: "plus")
+            }
+            List {
+                 ForEach (people) { person in
+                     Text(person.name ?? "No name")
+                         .onTapGesture {
+                            //to edit
+                            person.name = "Joe"
+                            try? self.viewContext.save()
+
+                            //to delete
+                            //viewContext.delete(person)
+                            //try! viewContext.save ()
+                         }
+                }
+            }
+        }
+    }
+}
+```
+
+**To have preview feature :**
+
+```Swift
+struct PersistenceController {
+    static let shared = PersistenceController()
+    static var preview: PersistenceController = {
+        let result = PersistenceController(inMemory: true)
+        let viewContext = result.contginer.viewContext
+        for
+             _
+               in 0..<10 {
+             let newItem = Person(context: viewContext)
+             newItem.name = "Sam"
+        }
+        do {
+            try viewContext.save()
+         } catch {
+            // Replace this implementation with code to handle the error appropriately.
+            // fatalError () causes the application to generate a crash log and terminate. You
+                 should not use this function in a shipping application, although it may be
+                 useful during development.
+             let nsError = error as NSError
+             fatalError("Unresolved error \(nsError), \(nsError.userInfo) ")
+        }
+        return result
+    }()
+    let container: NSPersistentContainer
+```
+
+### Predicates & Sortdescriptors
+
+```swift
+@FetchRequest(sortDescriptors: [NSSortDescriptor(key: "age", ascending: true), NSSortDescriptor(key: "name", ascending: true)],
+              predicate: NSPredicate(format: "name contains[c] 'jbe'"))
+var people: FetchedResults<Person>
+```
+
+**FetchData()**
+
+```swift
+func fetchData() {
+    // Create fetch request
+    let request = Person.personFetchRequest ()
+    // Set sort descriptors and predicates
+    request.sortDescriptors = [NSSortDescriptor(key: "age", ascending: true)]
+    request.predicate = NSPredicate (format: "name contains %Q", filterByText)
+    // Execute the fetch
+    DispatchQueue.hain.async {
+         do {
+              let results = try viewContext.fetch (request)
+             // Update the state property
+              self.people = results
+         }
+         catch {
+              print(error.localizedDescription)
+         }
+    }
+}
+```
