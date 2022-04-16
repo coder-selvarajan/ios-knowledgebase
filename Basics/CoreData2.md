@@ -216,12 +216,66 @@ class CoreDataViewModel: ObservableObject {
             print("Error saving. \(error)")
         }
     }
-
+    func updateFruit(entity: FruitEntity) {
+        let currentName = entity.name ?? ""
+        let newName = currentName + "!"
+        entity.name = newName
+        saveData()
+    }
+    func deleteFruit(indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        let entity = savedEntities[index]
+        container.viewContext.delete(entity)
+        saveData()
+    }
 }
+
 struct CoreDataBootcamp: View {
-    @StateObject var vm = CoreDataViewModel ()
+    @StateObject var vm = CoreDataViewModel()
+    @State var textFieldText: String =
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            Vstack(spacing: 20) {
+                TextField ("Add fruit here...", text: $textFieldText)
+                    .font (.headline)
+                    .padding(.leading)
+                    .frame(height: 55)
+                    .background (Color())
+                    .cornerRadius (10)
+                    •padding(.horizontal)
+
+                Button(action: {
+                    guard !textFieldText.isEmpty else { return }
+                     vm.addFruit(text:$textFieldText)
+                     textFieldText = ""
+                }, label: {
+                     Text("Button")
+                         . font(.headline)
+                         . foregroundColor(.white)
+                         .frame (height: 55)
+                         .frame (maxWidth: .infinity)
+                         .background (Color())
+                          .cornerRadius (10)
+                })
+                .padding(.horizontal)
+
+                List {
+                    ForEach (vm.savedEntities) { entity in
+                        Text(entity.name ?? "NO NAME")
+                        .onTapGesture {
+                            vm.updateFruit(entity: entity)
+                        }
+                    }
+                    .onDelete(perform: vm.deleteFruit)
+                }
+                .listStyle(PlainListStyle())
+            }
+            .navigationTitle("Fruits")
+        }
     }
 }
 ```
+
+**The Result :**
+
+![Core Data MVVM Demo](images/core-data2/CoreDataMVVM-Demo.png)
