@@ -47,5 +47,5 @@ iOS development related articles, notes and projects
 
 ## Project
 
-- [CWC - Receipe App (Core data)](/Projects/CWC-RecipeApp/Readme.md)
-- [Azam - Movie App (Core data + MVVM)](/Projects/Azam-MovieApp/Readme.md)
+- [CWC - Receipe App (Core data)](/Projects/CWC-RecipeApp)
+- [Azam - Movie App (Core data + MVVM)](/Projects/Azam-MovieApp)
