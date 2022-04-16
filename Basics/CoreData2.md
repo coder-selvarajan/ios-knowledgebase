@@ -181,6 +181,12 @@ func fetchData() {
 
 ## MVVM Sample App
 
+The App UI looks like this. Its a simple single view app to demonstrate the MVVM with core data.
+
+![Core Data MVVM Demo](images/core-data2/CoreDataMVVM-Demo.png)
+
+<details><summary><b>Click HERE to expand the code snippet</b></summary><br/>
+
 ```swift
 class CoreDataViewModel: ObservableObject {
     let container: NSPersistentContainer
@@ -276,6 +282,4 @@ struct CoreDataBootcamp: View {
 }
 ```
 
-**The Result :**
-
-![Core Data MVVM Demo](images/core-data2/CoreDataMVVM-Demo.png)
+</details>
