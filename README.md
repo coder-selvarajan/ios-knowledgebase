@@ -45,7 +45,7 @@ iOS development related articles, notes and projects
 - [Interview - FAQ](/Career/Interview-faq.md)
 - [iOS Interview Guide](/Career/iOS-Interview-Guide/Index.md)
 
-## Project
+## Projects
 
 - [CWC - Receipe App (Core data)](/Projects/CWC-RecipeApp)
 - [Azam - Movie App (Core data + MVVM)](/Projects/Azam-MovieApp)

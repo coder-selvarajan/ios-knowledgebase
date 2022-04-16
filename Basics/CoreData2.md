@@ -179,7 +179,7 @@ func fetchData() {
 }
 ```
 
-### View Model sample
+## MVVM Sample App
 
 ```swift
 class CoreDataViewModel: ObservableObject {
