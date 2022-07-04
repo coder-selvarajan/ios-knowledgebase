@@ -1,6 +1,27 @@
 # SwiftUI Basics
 
-Below content is an excerpt From - Mastering SwiftUI (Supports iOS 14 and Xcode 12) Book By Simon Ng
+Below content is an excerpt From - Mastering SwiftUI (Supports iOS 14 and Xcode 12) Book By Simon Ng and from Standford University course by Paul Hegarty.
+
+`@main` is a SwiftUI wrapper around the main app view. It is the root view of the app.
+
+Swift supports object oriented programing and functional programming.. SwiftUI is essentially using functional programming via structs.
+
+Functional programming says nothing where data is stored but it talks about what data there is and how it should be and all.
+It does not encapsulate the data.
+
+View is something that displays elements and captures user input events..
+
+```
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+```
+
+Here the ContentView struct behaves like a view. the 'body' is a variable of `some view` which means it can have any type of view. It can be a single view or a combinar view(that combines many views inside like HStack, ZStack etc... Paul Hegarty used to call them as bag of legos).
+
+Sometimes applying modifiers on combiner view will make the inner views applied with the modifier. For example if you apply foreground color then it will be applied to all the inner views.
 
 ## Imperative Vs Declarative
 
