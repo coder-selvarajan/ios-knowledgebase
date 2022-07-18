@@ -10,3 +10,4 @@
 - [Type Casting](/Swift/TypeCasting.md)
 - [Coding Challenges](/Swift/CodingChallenges.md)
 - [Data Structures and Algorithms](/Swift/DSA.md)
+- [Advanced](/Swift/Advanced.md)
