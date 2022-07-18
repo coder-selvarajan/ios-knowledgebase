@@ -36,8 +36,8 @@ iOS development related articles, notes and projects
 
 ## Advanced
 
-- [Core Data](/Basics/CoreData.md)
-- [Code Data - Part 2](/Basics/CoreData2.md)
+- [Core Data](/Advanced/CoreData.md)
+- [Code Data - Part 2](/Advanced/CoreData2.md)
 - [Combine](/Advanced/CombineBasics.md)
 
 ## Career
