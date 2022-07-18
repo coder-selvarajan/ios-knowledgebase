@@ -29,7 +29,7 @@ iOS development related articles, notes and projects
 
 - [HIG - Colors](/iOSdev/HumanInterfaceGuidelines/Colors.md)
 - [Command Line Basics](/iOSdev/CommandLineBasics.md)
-- [Code Signing](/iOSdev/CodeSigning.md)
+- [Code Signing & Provisioning Profile](/iOSdev/CodeSigning.md)
 - [Notarisation](/iOSdev/Notarisation.md)
 - [Design Principles](/iOSdev/DesignPrinciples.md)
 
