@@ -1,5 +1,7 @@
 # Code Signing
 
+Below notes are taken while watching EssentialDeveloper lecture on Code-signing topic.
+
 Code signing is essential for any software products. It ensures trust in user.
 
 - Installer Packages(.pkg) must be signed with Developer ID Installer Certificate
