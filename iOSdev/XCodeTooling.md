@@ -1,4 +1,4 @@
-# XCode Tooling & Debudding
+# XCode Tooling & Debugging
 
 ### Assistence
 

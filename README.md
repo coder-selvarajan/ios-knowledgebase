@@ -27,7 +27,7 @@ iOS development related articles, notes and projects
 
 ## iOS Development
 
-- [XCode Tooling & Debuggin](/iOSdev/XCodeTooling.md)
+- [XCode Tooling & Debugging](/iOSdev/XCodeTooling.md)
 - [HIG - Colors](/iOSdev/HumanInterfaceGuidelines/Colors.md)
 - [Command Line Basics](/iOSdev/CommandLineBasics.md)
 - [Code Signing & Provisioning Profile](/iOSdev/CodeSigning.md)
