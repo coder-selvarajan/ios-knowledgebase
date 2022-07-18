@@ -82,7 +82,7 @@ Code signing is essential for any software products. It ensures trust in user.
 
 - Introduced with the iOS Appstore from the beginning
 - Its a security technology
-- it certifies the app was created by the listed author
+- It certifies the app was created by the listed author
 - The system can detect any changes to a signed app.
   - It can detect whether the change is introduced accidentally or by a mallicious code
 - We participate as developer: signing identity and we sign the apps
@@ -121,19 +121,19 @@ Code signing is essential for any software products. It ensures trust in user.
 - To create a certificate
   - Goto [developer.apple.com](http://developer.apple.com)
   - Goto `Certificates, Identifiers & Profiles > Create a New Certificate`
-  - Under ‘Siftware’ select `Apple Development` and click ‘Continue’
+  - Under ‘Software’ select `Apple Development` and click ‘Continue’
   - In the next screen upload the generated CSR file then click ‘Continue’
   - Now we have the certificate
-  - Click ‘Download’ button to download the certificate locally. The name would be ‘development.cer’. Double tab on it to install it on local Keychain access. You may find the certificate under `login > My Certificates` tab
-  - The certificate name will be on the developer account name. Not the one we gave during CSR creation.
+  - Click ‘Download’ button to download the certificate locally. The name would be `development.cer` Double tab on it to install it on local Keychain access. You may find the certificate under `login > My Certificates` tab
+  - The certificate name will be on the developer account name, not the one we gave during CSR creation.
 - Types of Certificates
   - Development - Used during development phase to install the app on our devices.
   - Distribution - This option is used to share the app with other people
     - Multiple ways of sharing with the distribution certificate
-      - Create an ad-hoc build and send the ipa file to other people
+      - Create an `ad-hoc` build and send the **ipa** file to other people
       - Third party - firebase distribution
       - Create enterprise builds with enterprise account and share
-      - Create app-store build and share via Test-Flight
+      - Create app-store build and share via **Test-Flight**
 - To share the certificate and the private key with the team, we can export them from keychain as a `p12` file. This file will have the certificate and the private key and it is protected with a password. Make sure you keep the password.
   - To import the certificate and the private key on the other machine, just transfer the `p12` file and double tap it and provide the password
 
@@ -141,24 +141,24 @@ Code signing is essential for any software products. It ensures trust in user.
 
 - Personal developer account
   - free
-  - install debug builds on your devices
+  - install, debug, and builds on your devices
   - you cannot use this account to share build with others or to upload on app store
 - Company (personal) developer account
   - Apple’s Developer Program ($100 per year)
-  - Share builds internally (AdHoc) or externally (TestFlight, AppStore)
+  - Share builds internally (**AdHoc**) or externally (**TestFlight**, **AppStore**)
 - Enterprise company account
 
   - Apple’s Developer Enterprise Program ($300 per year)
   - Only for internal use and distribution of proprietary apps
 
 - Each Developer account has a unique identifier.
-  - to check the identifier goto Xcode > Build Settings, Under Signing section hover over the ‘Development Team’ value. You will see the identifier
+  - to check the identifier goto **Xcode > Build Settings, Under Signing section** hover over the ‘Development Team’ value. You will see the identifier
 
 ### App Identifier
 
-- Its an unique combination of Team identifier + Bundle Identifier.
+- Its an unique combination of **Team identifier + Bundle Identifier**.
 - App Identifiers are unique across the Apple Developer Portal
-  - Two accounts cannot have the same App Id
+  - Two accounts cannot have the same App Identifiers
 - It has supported platform info and the capabilities info
   - E.g. Push notifications, Game Centre, Sign-In with Apple, …
 - Explicit App Identifier: `in.selvarajan.Aangilam`
@@ -169,7 +169,7 @@ Code signing is essential for any software products. It ensures trust in user.
 - Each iOS device has a unique identifier (UDID)
   - Example: 00008030-001268920200402E
 - In order to install the development / adhoc builds on your device then the device identifier has to be listed on the apple developer portal devices and added to provisional profile.
-- To see the device identifier goto `Xcode > Window > Devices & Simulators` and check the identifier of the the connected phone.
+- To see the device identifier goto `Xcode > Window > Devices & Simulators` and check the identifier of the connected phone.
 
 ### Capabilities / Entitlements
 
@@ -192,13 +192,13 @@ Code signing is essential for any software products. It ensures trust in user.
     - For internal development purpose
   - Ad-Hoc
     - Uses distribution certificate
-    - Limited to 100 supported devices)
+    - Limited to 100 supported devices
   - Enterprise
     - No limit to number of supported devices
   - App Store
     - Used for both Test Flight and App Store
     - Uses the distribution certificate
-    - Wont have devices section because it can be used on any device
+    - Wont have devices section since it can be installed in any device
 - Profiles on disk: `Library > Mobile Devices > Provisioning Profiles`
   - Select a profile file and hit space to open the info of app id, certificates, entitlements & devices.
 
@@ -223,6 +223,23 @@ Code signing is essential for any software products. It ensures trust in user.
   - Seal - cehcksum for each component
   - Digital Signature = the key
   - Code Requirements = rules for verifying the code signature
+
+### Tips from Demo:
+
+- For `Debug` configuration we may enable the `Automatically manage signing`
+
+![Build Setting](images/build-setting.png)
+
+**After the Build check the signing identity by going to Left Pane > Reoprt Navigator > Build Item in the list**
+
+![Build Report](images/build-report.png)
+
+- You may further check the build certificate info by going to **Xcode > Product > Show Build Folder in Finder** and `Show Package Contents` of the recently build app file. Then you may inspect **embedded.mobileprovision** file
+
+### App Upload Process
+
+- Goto Xcode > Product > Archieve
+- App archieves window will be shown. Click on `Distribute App`
 
 ## **References**
 
