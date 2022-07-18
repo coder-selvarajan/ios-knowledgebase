@@ -21,12 +21,9 @@ iOS development related articles, notes and projects
 - [SwiftUI Cookbook](/SwiftUI/Cookbook/Cookbook.md)
 - [Working with Data](/SwiftUI/WorkingWithData/Readme.md)
 
-## UIKit
-
-- [UIKit Basics](/iOSdev/UIKit.md)
-
 ## iOS Development
 
+- [UIKit Basics](/iOSdev/UIKit.md)
 - [XCode Tooling & Debugging](/iOSdev/XCodeTooling.md)
 - [HIG - Colors](/iOSdev/HumanInterfaceGuidelines/Colors.md)
 - [Command Line Basics](/iOSdev/CommandLineBasics.md)

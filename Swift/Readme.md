@@ -1,4 +1,4 @@
-# Swift
+## Swift
 
 - [Fundamentals](/Swift/Swift-Fundamentals.md)
 - [Struct](/Swift/Struct.md)

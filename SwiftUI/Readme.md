@@ -1,4 +1,4 @@
-# SwiftUI
+## SwiftUI
 
 - [SwiftUI Basics](/SwiftUI/MasteringSwiftUI/Basics.md)
 - [SwiftUI Cookbook](/SwiftUI/Cookbook/Cookbook.md)
