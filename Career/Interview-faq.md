@@ -3,7 +3,7 @@
 <details><summary><b>What are the advantages of Swift over Objective-C?</b></summary><br/>
 
 - Swift is easier to read and maintain.
-- Swift is safer & faster.
+- Swift is safer & faster. (As per Apple website its 2.6 times faster than Objective c)
 - Swift is unified with memory management.
 - Swift support dynamic libraries.
 - Swift Playgrounds encourages interactive coding.
