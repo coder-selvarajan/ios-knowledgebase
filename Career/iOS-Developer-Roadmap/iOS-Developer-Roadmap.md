@@ -9,3 +9,7 @@ Some of the notes taken from this iOS Developer Roadmap repo: https://github.com
 ## Core Competencies
 
 ![iOS Core Competencies](images/ios-core-competencies.png)
+
+## Roadmap
+
+![iOS Dev Roadmap](images/iOS-Dev-Roadmap.png)
