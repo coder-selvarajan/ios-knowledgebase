@@ -27,3 +27,9 @@ In short, @escaping is used to inform callers of a function that takes a closure
 ## Weaf Self
 
 [When to use Weak self and why. Read this article](/Swift/WeakSelf.md)
+
+## Data Binding
+
+- Notification
+- Key-value binding
+- Delegation
