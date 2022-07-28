@@ -1,6 +1,6 @@
 # SwiftUI Advanced
 
-## ViewModifiers
+# ViewModifiers
 
 Viewmodifier is an object combing bunch of styles and intended to use in other controls to bring same look and feel. Check below code and sample UI display.
 
